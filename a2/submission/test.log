@@ -1,0 +1,118 @@
+
+> web222-assignment-2@7.0.0 test
+> jest --verbose --
+
+PASS src/problem-05.test.js
+  Problem 05 - getObservationsByPositionalAccuracy() function
+    √ missing options object returns same Array as original (2 ms)
+    √ empty options object returns same Array as original
+    √ equal value returns an Array of expected results
+    √ equal with unknown value returns an empty Array
+    √ greaterThan value returns an Array of expected results (1 ms)
+    √ greaterThan value larger than largest known returns an empty Array
+    √ lessThan value returns an Array of expected results (1 ms)
+    √ lessThan value smaller than smallest known returns an empty Array
+    √ greaterThan and lessThan values together return an Array of expected results
+    √ greaterThan and lessThan values too close together return an empty Array (1 ms)
+    √ equal is used over gte/lte if all are present (1 ms)
+
+PASS src/problem-02.test.js
+  Problem 02 - observationsByPrivacy()
+    √ should throw if privacy is not one of the expected values (16 ms)
+    √ should include the expected objects for a privacy = hidden (1 ms)
+    √ should include the expected objects for a privacy = HIDDEN (1 ms)
+    √ should include the expected objects for a privacy = null (2 ms)
+    √ should return expected Array if data contains strings and null
+
+PASS src/problem-03.test.js
+  Problem 03 - transformObservation(), transformObservations(), transformObservations2() functions
+    transformObservation() function
+      √ should return an Object (2 ms)
+      √ should return an Object containing an id property
+      √ should return an Object containing a speciesGuess property (1 ms)
+      √ should return an Object containing an isResearchQuality property
+      √ should return an Object containing a.geoCoords Array property
+      √ geoCoords Array should include two Numbers (1 ms)
+      √ geoCoords Array should be in the form [lng, lat]
+      √ should return an Object containing a user property
+      √ should return an Object containing a photos Array of URLs (1 ms)
+      √ should return an Object containing a photos Array of multiple URLs
+    transformObservations() function
+      √ should return an Array
+      √ should return a new Array (3 ms)
+      √ should return an Array with the same number of elements
+      √ should return an Array of Objects
+      √ should return an Array with Objects containing an id property
+      √ should return an Object containing a speciesGuess property (1 ms)
+      √ should return an Object containing an isResearchQuality property
+      √ should return an Object containing a.geoCoords Array property
+      √ geoCoords Array should include two Numbers
+      √ geoCoords Array should be in the form [lng, lat] (1 ms)
+      √ should return an Object containing a user property
+      √ should return an Object containing a photoUrls Array of URLs
+      √ should return an Object containing a photos Array of multiple URLs (1 ms)
+      √ real-world data should behave the same way as test data (2 ms)
+    transformObservations2() function
+      √ should return an Array
+      √ should return a new Array
+      √ should return an Array with the same number of elements (1 ms)
+      √ should return an Array of Objects
+      √ should return an Array with Objects containing an id property
+      √ should return an Object containing a speciesGuess property
+      √ should return an Object containing an isResearchQuality property
+      √ should return an Object containing a geoCoords Array property
+      √ geoCoords Array should include two Numbers
+      √ geoCoords Array should be in the form [lng, lat]
+      √ should return an Object containing a user property
+      √ should return an Object containing a photos Array of URLs
+      √ should return an Object containing a photos Array of multiple URLs (1 ms)
+      √ real-world data should behave the same way as test data (1 ms)
+
+PASS src/problem-06.test.js
+  Problem 06 - getTaxonPhotos() function
+    √ should return an Array of Objects with the right URLs (2 ms)
+    √ should return an empty Array if missing taxon
+    √ real-data should produce the expected result (7 ms)
+
+PASS src/problem-01.test.js
+  Problem 01 Part 1 - observationSummary() function with for loop
+    √ observationSummary() should call console.log() once per case (1 ms)
+    √ observationSummary() should log correct format of all cases (2 ms)
+  Problem 01 Part 2 - observationSummary2() function with forEach()
+    √ observationSummary2() should call console.log() once per case
+    √ observationSummary2() should log correct format of all cases (1 ms)
+
+PASS src/problem-07.test.js
+  Problem 07 - getUserStats() function
+    √ should return an Object with the right properties (2 ms)
+    √ should return an Object with correct count properties
+    √ should return an Object with correct totals (1 ms)
+    √ should return an Object with correct averages
+    √ real-data should produce the expected stats Object (1 ms)
+
+PASS src/problem-08.test.js
+  extractUserLogins() and extractUserLogins2
+    √ should return a single result (2 ms)
+    √ extractUserLogins should not return duplicates (1 ms)
+    √ extractUserLogins should work on real data
+    √ should return a single result
+    √ extractUserLogins should not return duplicates
+    √ extractUserLogins should work on real data
+
+PASS src/problem-04.test.js
+  Problem 04 - getObservationsById() function
+    √ if an unknown id is passed, null is returned (2 ms)
+    √ if a single, known id is passed, the full Object should be returned (1 ms)
+    √ if a multiple known ids are passed, an Array of the full Objects should be returned (1 ms)
+    √ if some known and some unknown ids are passed, an Array of the known Objects should be returned
+
+PASS src/problem-00.test.js
+  Problem 00 - getTotalResults() function
+    √ getTotalResults() should return a Number (1 ms)
+    √ getTotalResults() should contain the correct number of items
+
+Test Suites: 9 passed, 9 total
+Tests:       78 passed, 78 total
+Snapshots:   0 total
+Time:        1.846 s
+Ran all test suites.

@@ -1,0 +1,15 @@
+
+> web222-assignment-2@7.0.0 eslint
+> eslint src/**/*.js
+
+
+C:\Users\hylan\OneDrive\Documents\WEB222\a2\src\observations.js
+   97:8   error  'i' is not defined  no-undef
+   97:15  error  'i' is not defined  no-undef
+   97:40  error  'i' is not defined  no-undef
+   99:34  error  'i' is not defined  no-undef
+  100:34  error  'i' is not defined  no-undef
+  101:34  error  'i' is not defined  no-undef
+
+✖ 6 problems (6 errors, 0 warnings)
+
